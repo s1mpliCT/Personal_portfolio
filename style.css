@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(185, 179, 179);
+    position: absolute;
+    /* width: 250px; */
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 35px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+}
+
+.sidebar nav ul li {
+    font-size: 25px;
+    padding: 35px 0;
+
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 88vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.infoContainer {
+    /* background-color: purple; */
+    height: 84.69999999999996vh;
+    width: 80vw;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+    margin: auto 10px;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 2.2em;
+}
+
+.moreabout {
+    margin-top: 1.5em;
+}
+
+.buttons {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: blueviolet;
+    margin: 0 3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+    color: blueviolet;
+}
+
+.btn-sm {
+    font-size: 0.8em;
+    padding: 5px 25px;
+}
+
+.devPic img {
+    height: 84.69999999999996vh;
+}
+
+.contactForm {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 70px 30px;
+    margin-left: 70px;
+}
+
+.contactForm h1 {
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 30px;
+}
+
+.contactForm form div {
+    padding: 13px 0px;
+}
+
+#emailHelp {
+    font-size: 10px;
+    padding: 5px;
+    color: blueviolet;
+}
+
+.contactForm form div input {
+    border-radius: 7px;
+    height: 20px;
+}
+
+.blogItem {
+    margin: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.blogContainer h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 15px;
+}
+
+.blogContainer{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.blogItem p {
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+}
+
+.intro{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.intro h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 15px 10px;
+}
+
+.intro h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 15px 10px;
+}
+
+.intro p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 5px 3px;
+}
+
+.skillContainer {
+    padding: 5px;
+}
+
+.skill {
+    height: 10px;
+    width: 374px;
+    background-color: red;
+    border: solid black;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    margin: 3px 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.hundred {
+    width: 250px;
+    background-color: blueviolet;
+}
+
+.fifty {
+    width: 125px;
+    background-color: aqua;
+}
+
+.t25 {
+    width: 65px;
+    background-color: bisque;
+}
+
+.sidebarGo {
+    transform: translate(-260px, 10px);
+    position: absolute;
+}
+
+.hamburger{
+     position: absolute;
+     cursor: pointer;
+     top: 10px;
+     left: 10px;
+}
+
+.cross{
+    margin-left: 125px;
+}
+
+@media (max-width: 500px) {
+    /* .sidebar {
+        transform: translate(-260px, 10px);
+        position: absolute;
+    } */
+    .devPic{
+        display: none;
+    }
+    
+    .devInfo{
+        font-size: 8px;
+    }
+    
+    .buttons{
+        font-size: 6px;
+    }
+}
+@media (max-width: 1023px) {
+    /* .sidebar {
+        transform: translate(-260px, 10px);
+        position: absolute;
+    } */
+    .devPic{
+        display: none;
+    }
+    
+    .devInfo{
+        font-size: 13px;
+    }
+    
+    .buttons{
+        font-size: 12px;
+    }
+}
